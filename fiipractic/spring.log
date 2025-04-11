@@ -1,0 +1,308 @@
+2025-04-11T19:27:19.844+03:00  INFO 24092 --- [fiipractic] [main] com.fiipractic.FiipracticApplication     : Starting FiipracticApplication using Java 21.0.6 with PID 24092 (C:\Users\Vlad\Desktop\spring nou\git\fiipractic-spring\fiipractic\target\classes started by Vlad in C:\Users\Vlad\Desktop\spring nou\git\fiipractic-spring\fiipractic)
+2025-04-11T19:27:19.847+03:00  INFO 24092 --- [fiipractic] [main] com.fiipractic.FiipracticApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-04-11T19:27:20.600+03:00  INFO 24092 --- [fiipractic] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-11T19:27:20.657+03:00  INFO 24092 --- [fiipractic] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 3 JPA repository interfaces.
+2025-04-11T19:27:21.301+03:00  INFO 24092 --- [fiipractic] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-11T19:27:21.316+03:00  INFO 24092 --- [fiipractic] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-11T19:27:21.316+03:00  INFO 24092 --- [fiipractic] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-11T19:27:21.378+03:00  INFO 24092 --- [fiipractic] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-11T19:27:21.380+03:00  INFO 24092 --- [fiipractic] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1491 ms
+2025-04-11T19:27:21.554+03:00  INFO 24092 --- [fiipractic] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-11T19:27:21.621+03:00  INFO 24092 --- [fiipractic] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-11T19:27:21.660+03:00  INFO 24092 --- [fiipractic] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-11T19:27:21.942+03:00  INFO 24092 --- [fiipractic] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-11T19:27:21.973+03:00  INFO 24092 --- [fiipractic] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-11T19:27:22.324+03:00  INFO 24092 --- [fiipractic] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@321c2a7
+2025-04-11T19:27:22.326+03:00  INFO 24092 --- [fiipractic] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-11T19:27:22.412+03:00  INFO 24092 --- [fiipractic] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 9.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-11T19:27:23.284+03:00  INFO 24092 --- [fiipractic] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-11T19:27:23.365+03:00  INFO 24092 --- [fiipractic] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-11T19:27:23.626+03:00  INFO 24092 --- [fiipractic] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-11T19:27:24.189+03:00  WARN 24092 --- [fiipractic] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-11T19:27:24.210+03:00  INFO 24092 --- [fiipractic] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2025-04-11T19:27:24.715+03:00  INFO 24092 --- [fiipractic] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-11T19:27:24.720+03:00  INFO 24092 --- [fiipractic] [main] com.fiipractic.FiipracticApplication     : Started FiipracticApplication in 5.343 seconds (process running for 5.955)
+2025-04-11T19:28:26.204+03:00  INFO 24092 --- [fiipractic] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-11T19:28:26.213+03:00  INFO 24092 --- [fiipractic] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-11T19:28:26.218+03:00  INFO 24092 --- [fiipractic] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-11T19:28:26.220+03:00  INFO 24092 --- [fiipractic] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-11T19:28:26.230+03:00  INFO 24092 --- [fiipractic] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-11T19:28:27.923+03:00  INFO 23172 --- [fiipractic] [main] com.fiipractic.FiipracticApplication     : Starting FiipracticApplication using Java 21.0.6 with PID 23172 (C:\Users\Vlad\Desktop\spring nou\git\fiipractic-spring\fiipractic\target\classes started by Vlad in C:\Users\Vlad\Desktop\spring nou\git\fiipractic-spring\fiipractic)
+2025-04-11T19:28:27.925+03:00  INFO 23172 --- [fiipractic] [main] com.fiipractic.FiipracticApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-04-11T19:28:28.529+03:00  INFO 23172 --- [fiipractic] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-11T19:28:28.580+03:00  INFO 23172 --- [fiipractic] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 3 JPA repository interfaces.
+2025-04-11T19:28:29.062+03:00  INFO 23172 --- [fiipractic] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-11T19:28:29.072+03:00  INFO 23172 --- [fiipractic] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-11T19:28:29.073+03:00  INFO 23172 --- [fiipractic] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-11T19:28:29.124+03:00  INFO 23172 --- [fiipractic] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-11T19:28:29.124+03:00  INFO 23172 --- [fiipractic] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1164 ms
+2025-04-11T19:28:29.253+03:00  INFO 23172 --- [fiipractic] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-11T19:28:29.299+03:00  INFO 23172 --- [fiipractic] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-11T19:28:29.328+03:00  INFO 23172 --- [fiipractic] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-11T19:28:29.545+03:00  INFO 23172 --- [fiipractic] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-11T19:28:29.570+03:00  INFO 23172 --- [fiipractic] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-11T19:28:29.820+03:00  INFO 23172 --- [fiipractic] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@878feb2
+2025-04-11T19:28:29.822+03:00  INFO 23172 --- [fiipractic] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-11T19:28:29.886+03:00  INFO 23172 --- [fiipractic] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 9.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-11T19:28:30.632+03:00  INFO 23172 --- [fiipractic] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-11T19:28:30.698+03:00  INFO 23172 --- [fiipractic] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-11T19:28:30.920+03:00  INFO 23172 --- [fiipractic] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-11T19:28:31.417+03:00  WARN 23172 --- [fiipractic] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-11T19:28:31.434+03:00  INFO 23172 --- [fiipractic] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2025-04-11T19:28:31.875+03:00  INFO 23172 --- [fiipractic] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-11T19:28:31.881+03:00  INFO 23172 --- [fiipractic] [main] com.fiipractic.FiipracticApplication     : Started FiipracticApplication in 4.334 seconds (process running for 4.83)
+2025-04-11T19:29:10.039+03:00  INFO 23172 --- [fiipractic] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-11T19:29:10.039+03:00  INFO 23172 --- [fiipractic] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-11T19:29:10.040+03:00  INFO 23172 --- [fiipractic] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-04-11T19:29:10.293+03:00  INFO 23172 --- [fiipractic] [http-nio-8080-exec-3] com.fiipractic.Services.UserService      : S-a logat utilizatorul: defaultuser
+2025-04-11T19:29:38.770+03:00  INFO 23172 --- [fiipractic] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-11T19:29:38.778+03:00  INFO 23172 --- [fiipractic] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-11T19:29:38.781+03:00  INFO 23172 --- [fiipractic] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-11T19:29:38.783+03:00  INFO 23172 --- [fiipractic] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-11T19:29:38.795+03:00  INFO 23172 --- [fiipractic] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-11T19:30:31.999+03:00  INFO 7068 --- [fiipractic] [main] com.fiipractic.FiipracticApplication     : Starting FiipracticApplication using Java 21.0.6 with PID 7068 (C:\Users\Vlad\Desktop\spring nou\git\fiipractic-spring\fiipractic\target\classes started by Vlad in C:\Users\Vlad\Desktop\spring nou\git\fiipractic-spring\fiipractic)
+2025-04-11T19:30:32.001+03:00  INFO 7068 --- [fiipractic] [main] com.fiipractic.FiipracticApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-04-11T19:30:32.631+03:00  INFO 7068 --- [fiipractic] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-11T19:30:32.681+03:00  INFO 7068 --- [fiipractic] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 3 JPA repository interfaces.
+2025-04-11T19:30:33.149+03:00  INFO 7068 --- [fiipractic] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-11T19:30:33.159+03:00  INFO 7068 --- [fiipractic] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-11T19:30:33.160+03:00  INFO 7068 --- [fiipractic] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-11T19:30:33.208+03:00  INFO 7068 --- [fiipractic] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-11T19:30:33.208+03:00  INFO 7068 --- [fiipractic] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1171 ms
+2025-04-11T19:30:33.343+03:00  INFO 7068 --- [fiipractic] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-11T19:30:33.389+03:00  INFO 7068 --- [fiipractic] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-11T19:30:33.417+03:00  INFO 7068 --- [fiipractic] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-11T19:30:33.634+03:00  INFO 7068 --- [fiipractic] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-11T19:30:33.658+03:00  INFO 7068 --- [fiipractic] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-11T19:30:33.905+03:00  INFO 7068 --- [fiipractic] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@33356666
+2025-04-11T19:30:33.906+03:00  INFO 7068 --- [fiipractic] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-11T19:30:33.970+03:00  INFO 7068 --- [fiipractic] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 9.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-11T19:30:34.726+03:00  INFO 7068 --- [fiipractic] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-11T19:30:34.792+03:00  INFO 7068 --- [fiipractic] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-11T19:30:35.016+03:00  INFO 7068 --- [fiipractic] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-11T19:30:35.526+03:00  WARN 7068 --- [fiipractic] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-11T19:30:35.543+03:00  INFO 7068 --- [fiipractic] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2025-04-11T19:30:35.996+03:00  INFO 7068 --- [fiipractic] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-11T19:30:36.003+03:00  INFO 7068 --- [fiipractic] [main] com.fiipractic.FiipracticApplication     : Started FiipracticApplication in 4.373 seconds (process running for 4.855)
+2025-04-11T19:30:39.836+03:00  INFO 7068 --- [fiipractic] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-11T19:30:39.837+03:00  INFO 7068 --- [fiipractic] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-11T19:30:39.838+03:00  INFO 7068 --- [fiipractic] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-04-11T19:30:40.055+03:00  INFO 7068 --- [fiipractic] [http-nio-8080-exec-1] com.fiipractic.Services.UserService      : S-a logat utilizatorul: defaultuser
+2025-04-11T19:30:49.376+03:00  INFO 7068 --- [fiipractic] [http-nio-8080-exec-4] com.fiipractic.Services.UserService      : S-a logat utilizatorul: defaultuser
+2025-04-11T19:30:51.493+03:00  INFO 7068 --- [fiipractic] [http-nio-8080-exec-5] com.fiipractic.Services.UserService      : S-a logat utilizatorul: defaultuser
+2025-04-11T19:31:09.278+03:00  INFO 7068 --- [fiipractic] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-11T19:31:09.286+03:00  INFO 7068 --- [fiipractic] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-11T19:31:09.291+03:00  INFO 7068 --- [fiipractic] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-11T19:31:09.293+03:00  INFO 7068 --- [fiipractic] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-11T19:31:09.302+03:00  INFO 7068 --- [fiipractic] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-11T19:31:11.739+03:00  INFO 23436 --- [fiipractic] [main] com.fiipractic.FiipracticApplication     : Starting FiipracticApplication using Java 21.0.6 with PID 23436 (C:\Users\Vlad\Desktop\spring nou\git\fiipractic-spring\fiipractic\target\classes started by Vlad in C:\Users\Vlad\Desktop\spring nou\git\fiipractic-spring\fiipractic)
+2025-04-11T19:31:11.742+03:00  INFO 23436 --- [fiipractic] [main] com.fiipractic.FiipracticApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-04-11T19:31:12.365+03:00  INFO 23436 --- [fiipractic] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-11T19:31:12.416+03:00  INFO 23436 --- [fiipractic] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 3 JPA repository interfaces.
+2025-04-11T19:31:12.947+03:00  INFO 23436 --- [fiipractic] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-11T19:31:12.957+03:00  INFO 23436 --- [fiipractic] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-11T19:31:12.958+03:00  INFO 23436 --- [fiipractic] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-11T19:31:13.007+03:00  INFO 23436 --- [fiipractic] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-11T19:31:13.008+03:00  INFO 23436 --- [fiipractic] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1227 ms
+2025-04-11T19:31:13.158+03:00  INFO 23436 --- [fiipractic] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-11T19:31:13.204+03:00  INFO 23436 --- [fiipractic] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-11T19:31:13.232+03:00  INFO 23436 --- [fiipractic] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-11T19:31:13.448+03:00  INFO 23436 --- [fiipractic] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-11T19:31:13.473+03:00  INFO 23436 --- [fiipractic] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-11T19:31:13.718+03:00  INFO 23436 --- [fiipractic] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6d7e2795
+2025-04-11T19:31:13.719+03:00  INFO 23436 --- [fiipractic] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-11T19:31:13.792+03:00  INFO 23436 --- [fiipractic] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 9.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-11T19:31:14.548+03:00  INFO 23436 --- [fiipractic] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-11T19:31:14.619+03:00  INFO 23436 --- [fiipractic] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-11T19:31:14.941+03:00  INFO 23436 --- [fiipractic] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-11T19:31:15.500+03:00  WARN 23436 --- [fiipractic] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-11T19:31:15.524+03:00  INFO 23436 --- [fiipractic] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2025-04-11T19:31:16.112+03:00  INFO 23436 --- [fiipractic] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-11T19:31:16.119+03:00  INFO 23436 --- [fiipractic] [main] com.fiipractic.FiipracticApplication     : Started FiipracticApplication in 4.759 seconds (process running for 5.248)
+2025-04-11T19:31:28.986+03:00  INFO 23436 --- [fiipractic] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-11T19:31:28.986+03:00  INFO 23436 --- [fiipractic] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-11T19:31:28.987+03:00  INFO 23436 --- [fiipractic] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-04-11T19:31:29.088+03:00  INFO 23436 --- [fiipractic] [http-nio-8080-exec-2] com.fiipractic.Services.UserService      : S-a executat metoda: UserDetails com.fiipractic.Services.UserService.loadUserByUsername(String)
+2025-04-11T19:31:29.214+03:00  INFO 23436 --- [fiipractic] [http-nio-8080-exec-2] com.fiipractic.Services.UserService      : S-a logat utilizatorul: defaultuser
+2025-04-11T19:31:29.298+03:00  INFO 23436 --- [fiipractic] [http-nio-8080-exec-2] c.f.Services.UserProfileService          : S-a executat metoda: List com.fiipractic.Services.UserProfileService.getAllUserProfiles()
+2025-04-11T19:31:51.528+03:00  INFO 23436 --- [fiipractic] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-11T19:31:51.535+03:00  INFO 23436 --- [fiipractic] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-11T19:31:51.539+03:00  INFO 23436 --- [fiipractic] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-11T19:31:51.540+03:00  INFO 23436 --- [fiipractic] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-11T19:31:51.550+03:00  INFO 23436 --- [fiipractic] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-11T19:33:18.003+03:00  INFO 14796 --- [fiipractic] [main] com.fiipractic.FiipracticApplication     : Starting FiipracticApplication using Java 21.0.6 with PID 14796 (C:\Users\Vlad\Desktop\spring nou\git\fiipractic-spring\fiipractic\target\classes started by Vlad in C:\Users\Vlad\Desktop\spring nou\git\fiipractic-spring\fiipractic)
+2025-04-11T19:33:18.005+03:00  INFO 14796 --- [fiipractic] [main] com.fiipractic.FiipracticApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-04-11T19:33:18.614+03:00  INFO 14796 --- [fiipractic] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-11T19:33:18.663+03:00  INFO 14796 --- [fiipractic] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 3 JPA repository interfaces.
+2025-04-11T19:33:19.183+03:00  INFO 14796 --- [fiipractic] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-11T19:33:19.194+03:00  INFO 14796 --- [fiipractic] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-11T19:33:19.195+03:00  INFO 14796 --- [fiipractic] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-11T19:33:19.244+03:00  INFO 14796 --- [fiipractic] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-11T19:33:19.245+03:00  INFO 14796 --- [fiipractic] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1204 ms
+2025-04-11T19:33:19.391+03:00  INFO 14796 --- [fiipractic] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-11T19:33:19.437+03:00  INFO 14796 --- [fiipractic] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-11T19:33:19.464+03:00  INFO 14796 --- [fiipractic] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-11T19:33:19.680+03:00  INFO 14796 --- [fiipractic] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-11T19:33:19.704+03:00  INFO 14796 --- [fiipractic] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-11T19:33:19.948+03:00  INFO 14796 --- [fiipractic] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e2c627e
+2025-04-11T19:33:19.950+03:00  INFO 14796 --- [fiipractic] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-11T19:33:20.018+03:00  INFO 14796 --- [fiipractic] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 9.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-11T19:33:20.767+03:00  INFO 14796 --- [fiipractic] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-11T19:33:20.831+03:00  INFO 14796 --- [fiipractic] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-11T19:33:21.130+03:00  INFO 14796 --- [fiipractic] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-11T19:33:21.663+03:00  WARN 14796 --- [fiipractic] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-11T19:33:21.687+03:00  INFO 14796 --- [fiipractic] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2025-04-11T19:33:22.263+03:00  INFO 14796 --- [fiipractic] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-11T19:33:22.270+03:00  INFO 14796 --- [fiipractic] [main] com.fiipractic.FiipracticApplication     : Started FiipracticApplication in 4.643 seconds (process running for 5.117)
+2025-04-11T19:33:26.294+03:00  INFO 14796 --- [fiipractic] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-11T19:33:26.295+03:00  INFO 14796 --- [fiipractic] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-11T19:33:26.296+03:00  INFO 14796 --- [fiipractic] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-04-11T19:33:26.388+03:00  INFO 14796 --- [fiipractic] [http-nio-8080-exec-1] com.fiipractic.Services.UserService      : S-a executat metoda: UserDetails com.fiipractic.Services.UserService.loadUserByUsername(String)
+2025-04-11T19:33:26.511+03:00  INFO 14796 --- [fiipractic] [http-nio-8080-exec-1] com.fiipractic.Services.UserService      : S-a logat utilizatorul: defaultuser
+2025-04-11T19:33:26.593+03:00  INFO 14796 --- [fiipractic] [http-nio-8080-exec-1] c.f.Services.UserProfileService          : S-a executat metoda: List com.fiipractic.Services.UserProfileService.getAllUserProfiles()
+2025-04-11T19:33:31.645+03:00  INFO 14796 --- [fiipractic] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-11T19:33:31.653+03:00  INFO 14796 --- [fiipractic] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-11T19:33:31.658+03:00  INFO 14796 --- [fiipractic] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-11T19:33:31.659+03:00  INFO 14796 --- [fiipractic] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-11T19:33:31.668+03:00  INFO 14796 --- [fiipractic] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-11T19:48:59.027+03:00  INFO 14652 --- [fiipractic] [main] com.fiipractic.FiipracticApplication     : Starting FiipracticApplication using Java 21.0.6 with PID 14652 (C:\Users\Vlad\Desktop\spring nou\git\fiipractic-spring\fiipractic\target\classes started by Vlad in C:\Users\Vlad\Desktop\spring nou\git\fiipractic-spring\fiipractic)
+2025-04-11T19:48:59.028+03:00  INFO 14652 --- [fiipractic] [main] com.fiipractic.FiipracticApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-04-11T19:48:59.740+03:00  INFO 14652 --- [fiipractic] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-11T19:48:59.794+03:00  INFO 14652 --- [fiipractic] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 3 JPA repository interfaces.
+2025-04-11T19:49:00.452+03:00  INFO 14652 --- [fiipractic] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-11T19:49:00.462+03:00  INFO 14652 --- [fiipractic] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-11T19:49:00.462+03:00  INFO 14652 --- [fiipractic] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-11T19:49:00.521+03:00  INFO 14652 --- [fiipractic] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-11T19:49:00.522+03:00  INFO 14652 --- [fiipractic] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1457 ms
+2025-04-11T19:49:00.669+03:00  INFO 14652 --- [fiipractic] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-11T19:49:00.721+03:00  INFO 14652 --- [fiipractic] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-11T19:49:00.751+03:00  INFO 14652 --- [fiipractic] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-11T19:49:00.999+03:00  INFO 14652 --- [fiipractic] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-11T19:49:01.027+03:00  INFO 14652 --- [fiipractic] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-11T19:49:01.318+03:00  INFO 14652 --- [fiipractic] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1c972ae6
+2025-04-11T19:49:01.320+03:00  INFO 14652 --- [fiipractic] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-11T19:49:01.389+03:00  INFO 14652 --- [fiipractic] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 9.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-11T19:49:02.230+03:00  INFO 14652 --- [fiipractic] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-11T19:49:02.299+03:00  INFO 14652 --- [fiipractic] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-11T19:49:11.106+03:00  INFO 14652 --- [fiipractic] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-11T19:49:11.714+03:00  WARN 14652 --- [fiipractic] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-11T19:49:11.742+03:00  INFO 14652 --- [fiipractic] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2025-04-11T19:49:12.389+03:00  INFO 14652 --- [fiipractic] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-11T19:49:12.396+03:00  INFO 14652 --- [fiipractic] [main] com.fiipractic.FiipracticApplication     : Started FiipracticApplication in 13.778 seconds (process running for 14.985)
+2025-04-11T19:49:19.616+03:00  INFO 14652 --- [fiipractic] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-11T19:49:19.618+03:00  INFO 14652 --- [fiipractic] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-11T19:49:19.619+03:00  INFO 14652 --- [fiipractic] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-04-11T19:49:19.715+03:00  INFO 14652 --- [fiipractic] [http-nio-8080-exec-1] com.fiipractic.Services.UserService      : S-a executat metoda: UserDetails com.fiipractic.Services.UserService.loadUserByUsername(String)
+2025-04-11T19:49:19.856+03:00  INFO 14652 --- [fiipractic] [http-nio-8080-exec-1] com.fiipractic.Services.UserService      : S-a logat utilizatorul: defaultuser
+2025-04-11T19:49:19.942+03:00  INFO 14652 --- [fiipractic] [http-nio-8080-exec-1] c.f.Services.UserProfileService          : S-a executat metoda: List com.fiipractic.Services.UserProfileService.getAllUserProfiles()
+2025-04-11T19:49:35.895+03:00  INFO 14652 --- [fiipractic] [http-nio-8080-exec-3] com.fiipractic.Services.UserService      : S-a executat metoda: UserDetails com.fiipractic.Services.UserService.loadUserByUsername(String)
+2025-04-11T19:49:35.903+03:00  INFO 14652 --- [fiipractic] [http-nio-8080-exec-3] com.fiipractic.Services.UserService      : S-a logat utilizatorul: defaultuser
+2025-04-11T19:49:35.969+03:00  INFO 14652 --- [fiipractic] [http-nio-8080-exec-3] c.f.Services.UserProfileService          : S-a executat metoda: List com.fiipractic.Services.UserProfileService.getAllUserProfiles()
+2025-04-11T19:49:51.889+03:00  INFO 14652 --- [fiipractic] [http-nio-8080-exec-4] com.fiipractic.Services.UserService      : S-a executat metoda: UserDetails com.fiipractic.Services.UserService.loadUserByUsername(String)
+2025-04-11T19:50:02.423+03:00  INFO 14652 --- [fiipractic] [http-nio-8080-exec-5] com.fiipractic.Services.UserService      : S-a executat metoda: UserDetails com.fiipractic.Services.UserService.loadUserByUsername(String)
+2025-04-11T19:50:02.431+03:00  INFO 14652 --- [fiipractic] [http-nio-8080-exec-5] com.fiipractic.Services.UserService      : S-a logat utilizatorul: defaultuser
+2025-04-11T19:50:34.593+03:00  INFO 14652 --- [fiipractic] [http-nio-8080-exec-5] com.fiipractic.Services.WeatherService   : S-a executat metoda: ResponseDTO com.fiipractic.Services.WeatherService.getDetails(String,String,String,String,String)
+2025-04-11T19:50:34.595+03:00  INFO 14652 --- [fiipractic] [http-nio-8080-exec-5] com.fiipractic.Services.UserService      : S-a executat metoda: Optional com.fiipractic.Services.UserService.getUserByUsername(String)
+2025-04-11T19:50:34.615+03:00  INFO 14652 --- [fiipractic] [http-nio-8080-exec-5] c.f.Services.UserProfileService          : S-a executat metoda: Optional com.fiipractic.Services.UserProfileService.getUserProfileByUsername(Long)
+2025-04-11T19:50:35.103+03:00  INFO 14652 --- [fiipractic] [http-nio-8080-exec-5] com.fiipractic.Services.EmailService     : S-a executat metoda: void com.fiipractic.Services.EmailService.sendEmail(String,String,String)
+2025-04-11T19:50:49.178+03:00  INFO 14652 --- [fiipractic] [http-nio-8080-exec-7] com.fiipractic.Services.UserService      : S-a executat metoda: UserDetails com.fiipractic.Services.UserService.loadUserByUsername(String)
+2025-04-11T19:50:49.185+03:00  INFO 14652 --- [fiipractic] [http-nio-8080-exec-7] com.fiipractic.Services.UserService      : S-a logat utilizatorul: defaultuser
+2025-04-11T19:50:49.252+03:00  INFO 14652 --- [fiipractic] [http-nio-8080-exec-7] com.fiipractic.Services.WeatherService   : S-a executat metoda: ResponseDTO com.fiipractic.Services.WeatherService.getDetails(String,String,String,String,String)
+2025-04-11T19:50:49.253+03:00  INFO 14652 --- [fiipractic] [http-nio-8080-exec-7] com.fiipractic.Services.UserService      : S-a executat metoda: Optional com.fiipractic.Services.UserService.getUserByUsername(String)
+2025-04-11T19:50:49.258+03:00  INFO 14652 --- [fiipractic] [http-nio-8080-exec-7] c.f.Services.UserProfileService          : S-a executat metoda: Optional com.fiipractic.Services.UserProfileService.getUserProfileByUsername(Long)
+2025-04-11T19:50:49.489+03:00  INFO 14652 --- [fiipractic] [http-nio-8080-exec-7] com.fiipractic.Services.EmailService     : S-a executat metoda: void com.fiipractic.Services.EmailService.sendEmail(String,String,String)
+2025-04-11T19:51:25.087+03:00  INFO 14652 --- [fiipractic] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-11T19:51:25.095+03:00  INFO 14652 --- [fiipractic] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-11T19:51:25.100+03:00  INFO 14652 --- [fiipractic] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-11T19:51:25.102+03:00  INFO 14652 --- [fiipractic] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-11T19:51:25.113+03:00  INFO 14652 --- [fiipractic] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-11T19:51:27.667+03:00  INFO 8376 --- [fiipractic] [main] com.fiipractic.FiipracticApplication     : Starting FiipracticApplication using Java 21.0.6 with PID 8376 (C:\Users\Vlad\Desktop\spring nou\git\fiipractic-spring\fiipractic\target\classes started by Vlad in C:\Users\Vlad\Desktop\spring nou\git\fiipractic-spring\fiipractic)
+2025-04-11T19:51:27.669+03:00  INFO 8376 --- [fiipractic] [main] com.fiipractic.FiipracticApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-04-11T19:51:28.348+03:00  INFO 8376 --- [fiipractic] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-11T19:51:28.401+03:00  INFO 8376 --- [fiipractic] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 3 JPA repository interfaces.
+2025-04-11T19:51:28.975+03:00  INFO 8376 --- [fiipractic] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-11T19:51:28.986+03:00  INFO 8376 --- [fiipractic] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-11T19:51:28.986+03:00  INFO 8376 --- [fiipractic] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-11T19:51:29.039+03:00  INFO 8376 --- [fiipractic] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-11T19:51:29.040+03:00  INFO 8376 --- [fiipractic] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1330 ms
+2025-04-11T19:51:29.185+03:00  INFO 8376 --- [fiipractic] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-11T19:51:29.235+03:00  INFO 8376 --- [fiipractic] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-11T19:51:29.265+03:00  INFO 8376 --- [fiipractic] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-11T19:51:29.517+03:00  INFO 8376 --- [fiipractic] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-11T19:51:29.545+03:00  INFO 8376 --- [fiipractic] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-11T19:51:29.832+03:00  INFO 8376 --- [fiipractic] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3134b261
+2025-04-11T19:51:29.834+03:00  INFO 8376 --- [fiipractic] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-11T19:51:29.905+03:00  INFO 8376 --- [fiipractic] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 9.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-11T19:51:30.729+03:00  INFO 8376 --- [fiipractic] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-11T19:51:30.800+03:00  INFO 8376 --- [fiipractic] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-11T19:51:33.091+03:00  INFO 8376 --- [fiipractic] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-11T19:51:33.665+03:00  WARN 8376 --- [fiipractic] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-11T19:51:33.692+03:00  INFO 8376 --- [fiipractic] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2025-04-11T19:51:34.359+03:00  INFO 8376 --- [fiipractic] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-11T19:51:34.369+03:00  INFO 8376 --- [fiipractic] [main] com.fiipractic.FiipracticApplication     : Started FiipracticApplication in 7.155 seconds (process running for 7.829)
+2025-04-11T19:51:37.139+03:00  INFO 8376 --- [fiipractic] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-11T19:51:37.139+03:00  INFO 8376 --- [fiipractic] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-11T19:51:37.140+03:00  INFO 8376 --- [fiipractic] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-04-11T19:51:37.237+03:00  INFO 8376 --- [fiipractic] [http-nio-8080-exec-2] com.fiipractic.Services.UserService      : S-a executat metoda: UserDetails com.fiipractic.Services.UserService.loadUserByUsername(String)
+2025-04-11T19:51:37.365+03:00  INFO 8376 --- [fiipractic] [http-nio-8080-exec-2] com.fiipractic.Services.UserService      : S-a logat utilizatorul: defaultuser
+2025-04-11T19:51:37.468+03:00  INFO 8376 --- [fiipractic] [http-nio-8080-exec-2] com.fiipractic.Services.WeatherService   : S-a executat metoda: ResponseDTO com.fiipractic.Services.WeatherService.getDetails(String,String,String,String,String)
+2025-04-11T19:51:37.468+03:00  INFO 8376 --- [fiipractic] [http-nio-8080-exec-2] com.fiipractic.Services.UserService      : S-a executat metoda: Optional com.fiipractic.Services.UserService.getUserByUsername(String)
+2025-04-11T19:51:37.474+03:00  INFO 8376 --- [fiipractic] [http-nio-8080-exec-2] c.f.Services.UserProfileService          : S-a executat metoda: Optional com.fiipractic.Services.UserProfileService.getUserProfileByUsername(Long)
+2025-04-11T19:51:37.716+03:00  INFO 8376 --- [fiipractic] [http-nio-8080-exec-2] com.fiipractic.Services.EmailService     : S-a executat metoda: void com.fiipractic.Services.EmailService.sendEmail(String,String,String)
+2025-04-11T19:52:57.629+03:00  WARN 8376 --- [fiipractic] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m27s681ms514µs800ns).
+2025-04-11T19:52:57.632+03:00  INFO 8376 --- [fiipractic] [http-nio-8080-exec-2] com.fiipractic.Services.UserService      : S-a executat metoda: Optional com.fiipractic.Services.UserService.getUserByUsername(String)
+2025-04-11T19:52:57.636+03:00  INFO 8376 --- [fiipractic] [http-nio-8080-exec-2] c.f.Services.RequestHistoryService       : S-a executat metoda: RequestHistory com.fiipractic.Services.RequestHistoryService.createRequestHistory(RequestHistory)
+2025-04-11T19:53:02.964+03:00  INFO 8376 --- [fiipractic] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-11T19:53:02.971+03:00  INFO 8376 --- [fiipractic] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-11T19:53:02.975+03:00  INFO 8376 --- [fiipractic] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-11T19:53:02.977+03:00  INFO 8376 --- [fiipractic] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-11T19:53:02.987+03:00  INFO 8376 --- [fiipractic] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -4,10 +4,9 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fiipractic.DTO.ResponseDTO;
 import com.fiipractic.DTO.ResponseDTO.*;
-import com.fiipractic.Entity.RequestHistory;
 import com.fiipractic.Entity.User;
 import com.fiipractic.Entity.UserProfile;
-import com.fiipractic.Util.AppUserContext;
+import com.fiipractic.Util.SecurityUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -24,7 +23,7 @@ public class WeatherService {
     private RequestHistoryService requestHistoryService;
 
     @Autowired
-    private AppUserContext appUserContext;
+    private SecurityUtil securityUtil;
 
     @Autowired
     private UserProfileService userProfileService;
@@ -87,7 +86,7 @@ public class WeatherService {
     }
 
     public ResponseDTO getDetails(String lat, String lon, String aqi, String days, String alerts) throws Exception {
-        User currentUser = appUserContext.getCurrentUser();
+        User currentUser = securityUtil.getCurrentUser();
         Optional<UserProfile> userProfile = userProfileService.getUserProfileByUsername(currentUser.getId());
         if (userProfile.isEmpty()) {
             throw new Exception("User not found");
@@ -101,11 +100,11 @@ public class WeatherService {
         } catch(Exception e) {
             throw new Exception(e.getMessage());
         }
-        requestHistoryService.createRequestHistory(new RequestHistory(
+        /*requestHistoryService.createRequestHistory(new RequestHistory(
                 null, lat, lon, true, aqi.equals("yes"), alerts.equals("yes"),
                 Integer.parseInt(days), rez.toString(),
                 currentUser
-        ));
+        ));*/
 
         if (Boolean.TRUE.equals(userProfile.get().getEmailNotification())) {
             emailService.sendEmail(

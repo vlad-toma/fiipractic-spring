@@ -1,11 +1,14 @@
 package com.fiipractic.Services;
 
+import com.fiipractic.DTO.RequestHistoryDTO;
+import com.fiipractic.Entity.GenericMapper;
 import com.fiipractic.Entity.RequestHistory;
 import com.fiipractic.Repository.RequestHistoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public class RequestHistoryService {
@@ -16,7 +19,7 @@ public class RequestHistoryService {
         return requestHistoryRepository.save(requestHistory);
     }
 
-    public Page<RequestHistory> getRequestHistoriesByUserId(Long userId, Pageable pageable) {
-        return requestHistoryRepository.findByUserId(userId, pageable);
+    public List<RequestHistoryDTO> getRequestHistoriesByUserId(Long userId, Pageable pageable) {
+        return requestHistoryRepository.findByUserId(userId, pageable).map(GenericMapper::toRequestHistoryDTO).toList();
     }
 }

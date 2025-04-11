@@ -3,7 +3,7 @@ package com.fiipractic.Controllers;
 import com.fiipractic.DTO.UserProfileDTO;
 import com.fiipractic.Entity.UserProfile;
 import com.fiipractic.Services.UserProfileService;
-import com.fiipractic.Util.AppUserContext;
+import com.fiipractic.Util.SecurityUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,7 +17,7 @@ public class UserProfileController {
     private UserProfileService userProfileService;
 
     @Autowired
-    private AppUserContext appUserContext;
+    private SecurityUtil securityUtil;
 
     @GetMapping
     public List<UserProfileDTO> getAllUserProfiles() {
@@ -31,7 +31,7 @@ public class UserProfileController {
 
     @PostMapping
     public UserProfileDTO createUserProfile(@RequestBody UserProfile userProfile) {
-        userProfile.setUser(appUserContext.getCurrentUser());
+        userProfile.setUser(securityUtil.getCurrentUser());
         return userProfileService.createUserProfile(userProfile);
     }
 
