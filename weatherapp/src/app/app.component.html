@@ -1,0 +1,18 @@
+<div *ngIf="!isLoggedIn">
+  <app-login (submitSuccess)="onLoginSuccess()"></app-login>
+</div>
+
+<div *ngIf="isLoggedIn" style="height: 100%">
+  <aol-map (olClick)="dispatchCursor($event)">
+    <aol-view [zoom]="4">
+      <aol-coordinate [x]="13" [y]="48" [srid]="'EPSG:4326'"></aol-coordinate>
+    </aol-view>
+    <aol-layer-tile>
+      <aol-source-osm></aol-source-osm>
+    </aol-layer-tile>
+    <aol-interaction-default></aol-interaction-default>
+    <aol-control-scaleline></aol-control-scaleline>
+    <aol-control-zoomslider></aol-control-zoomslider>
+    <aol-control-zoom></aol-control-zoom>
+  </aol-map>
+</div>

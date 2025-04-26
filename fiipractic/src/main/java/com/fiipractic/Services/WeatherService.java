@@ -58,7 +58,7 @@ public class WeatherService {
         CurrentDTO current = objectMapper.treeToValue(currentNode, CurrentDTO.class);
         if (currentNode.has("air_quality")) {
             AirQualityDTO airQuality = objectMapper.treeToValue(currentNode.path("air_quality"), AirQualityDTO.class);
-            current.setAir_quality(airQuality);
+            current.setAqco(airQuality.getCo());
         }
         responseDTO.setCurrent(current);
 
@@ -100,11 +100,6 @@ public class WeatherService {
         } catch(Exception e) {
             throw new Exception(e.getMessage());
         }
-        /*requestHistoryService.createRequestHistory(new RequestHistory(
-                null, lat, lon, true, aqi.equals("yes"), alerts.equals("yes"),
-                Integer.parseInt(days), rez.toString(),
-                currentUser
-        ));*/
 
         if (Boolean.TRUE.equals(userProfile.get().getEmailNotification())) {
             emailService.sendEmail(

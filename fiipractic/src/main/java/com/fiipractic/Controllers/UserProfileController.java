@@ -1,13 +1,15 @@
 package com.fiipractic.Controllers;
 
 import com.fiipractic.DTO.UserProfileDTO;
+import com.fiipractic.Entity.User;
 import com.fiipractic.Entity.UserProfile;
 import com.fiipractic.Services.UserProfileService;
 import com.fiipractic.Util.SecurityUtil;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
 import java.util.Optional;
 
 @RestController
@@ -20,28 +22,45 @@ public class UserProfileController {
     private SecurityUtil securityUtil;
 
     @GetMapping
-    public List<UserProfileDTO> getAllUserProfiles() {
-        return userProfileService.getAllUserProfiles();
-    }
-
-    @GetMapping("/{id}")
-    public Optional<UserProfileDTO> getUserProfileById(@PathVariable Long id) {
-        return userProfileService.getUserProfileById(id);
+    public ResponseEntity<?> getCurrentUserProfile() {
+        try {
+            return new ResponseEntity<>(userProfileService.getCurrentUserProfile(), HttpStatus.OK);
+        } catch (Exception e) {
+            return mapException(e);
+        }
     }
 
     @PostMapping
-    public UserProfileDTO createUserProfile(@RequestBody UserProfile userProfile) {
-        userProfile.setUser(securityUtil.getCurrentUser());
-        return userProfileService.createUserProfile(userProfile);
+    public ResponseEntity<?> createOrUpdateUserProfile(@RequestBody UserProfile userProfile) {
+        try {
+            User currentUser = securityUtil.getCurrentUser();
+            Optional<UserProfileDTO> existing = userProfileService.customFindByUserId(currentUser.getId());
+
+            UserProfileDTO savedProfile = userProfileService.createOrUpdateCurrentUserProfile(userProfile);
+
+            HttpStatus status = existing.isPresent() ? HttpStatus.OK : HttpStatus.CREATED;
+            return new ResponseEntity<>(savedProfile, status);
+        } catch (Exception e) {
+            return mapException(e);
+        }
     }
 
-    @PutMapping
-    public UserProfileDTO updateUserProfile(@RequestBody UserProfile userProfile) {
-        return userProfileService.updateUserProfile(userProfile);
+    @DeleteMapping
+    public ResponseEntity<?> deleteCurrentUserProfile() {
+        try {
+            userProfileService.deleteCurrentUserProfile();
+            return new ResponseEntity<>("", HttpStatus.OK);
+        } catch (Exception e) {
+            return mapException(e);
+        }
     }
 
-    @DeleteMapping("/{id}")
-    public void deleteUserProfile(@PathVariable Long id) {
-        userProfileService.deleteUserProfile(id);
+    private ResponseEntity<String> mapException(Exception e) {
+        return switch (e.getMessage()) {
+            case "404" -> new ResponseEntity<>("Not Found", HttpStatus.NOT_FOUND);
+            case "409" -> new ResponseEntity<>("Conflict", HttpStatus.CONFLICT);
+            case "422" -> new ResponseEntity<>("Unprocessable entity", HttpStatus.UNPROCESSABLE_ENTITY);
+            default -> new ResponseEntity<>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
+        };
     }
 }

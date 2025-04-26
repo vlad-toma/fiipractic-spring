@@ -5,9 +5,9 @@ import com.fiipractic.Entity.User;
 import com.fiipractic.Util.SecurityUtil;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -56,7 +56,7 @@ public class MyServiceAspect {
         return result;
     }
 
-    @Before("execution(* com.fiipractic.Services.*.*(..))")
+    @After("execution(* com.fiipractic.Services.*.*(..))")
     public void logExecution(JoinPoint joinPoint) {
         Logger logger = LoggerFactory.getLogger(joinPoint.getTarget().getClass());
 

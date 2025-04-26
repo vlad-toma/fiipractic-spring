@@ -22,7 +22,9 @@ public class ResponseDTO {
         private String name;
         private String region;
         private String country;
-        private String tz_id;
+        private double lat;
+        private double lon;
+        private String localtime;
 
         public String getName() {
             return name;
@@ -48,22 +50,57 @@ public class ResponseDTO {
             this.country = country;
         }
 
-        public String getTz_id() {
-            return tz_id;
+        public String getLocaltime() {
+            return localtime;
         }
 
-        public void setTz_id(String tz_id) {
-            this.tz_id = tz_id;
+        public void setLocaltime(String localtime) {
+            this.localtime = localtime;
+        }
+
+        public double getLat() {
+            return lat;
+        }
+
+        public void setLat(double lat) {
+            this.lat = lat;
+        }
+
+        public double getLon() {
+            return lon;
+        }
+
+        public void setLon(double lon) {
+            this.lon = lon;
         }
     }
 
     @JsonIgnoreProperties(ignoreUnknown = true)
     public static class CurrentDTO {
+        private String last_updated;
         private double temp_c;
+        private ConditionDTO condition;
         private double wind_kph;
         private String wind_dir;
         private double precip_mm;
-        private AirQualityDTO air_quality;
+        private double humidity;
+        private double aqco;
+
+        public ConditionDTO getCondition() {
+            return condition;
+        }
+
+        public void setCondition(ConditionDTO condition) {
+            this.condition = condition;
+        }
+
+        public String getLast_updated() {
+            return last_updated;
+        }
+
+        public void setLast_updated(String last_updated) {
+            this.last_updated = last_updated;
+        }
 
         public double getTemp_c() {
             return temp_c;
@@ -97,19 +134,26 @@ public class ResponseDTO {
             this.precip_mm = precip_mm;
         }
 
-        public AirQualityDTO getAir_quality() {
-            return air_quality;
+        public double getHumidity() {
+            return humidity;
         }
 
-        public void setAir_quality(AirQualityDTO air_quality) {
-            this.air_quality = air_quality;
+        public void setHumidity(double humidity) {
+            this.humidity = humidity;
+        }
+
+        public double getAqco() {
+            return aqco;
+        }
+
+        public void setAqco(double aqco) {
+            this.aqco = aqco;
         }
     }
 
     @JsonIgnoreProperties(ignoreUnknown = true)
     public static class AirQualityDTO {
         private double co;
-        private int gb_defra_index;
 
         public double getCo() {
             return co;
@@ -118,13 +162,18 @@ public class ResponseDTO {
         public void setCo(double co) {
             this.co = co;
         }
+    }
 
-        public int getGb_defra_index() {
-            return gb_defra_index;
+    @JsonIgnoreProperties(ignoreUnknown = true)
+    public static class ConditionDTO {
+        private String text;
+
+        public String getText() {
+            return text;
         }
 
-        public void setGb_defra_index(int gb_defra_index) {
-            this.gb_defra_index = gb_defra_index;
+        public void setText(String text) {
+            this.text = text;
         }
     }
 
@@ -165,41 +214,59 @@ public class ResponseDTO {
 
     @JsonIgnoreProperties(ignoreUnknown = true)
     public static class DayDTO {
-        private double maxtemp_c;
-        private double mintemp_c;
-        private double maxwind_kph;
-        private double totalprecip_mm;
+        private double min_day;
+        private double min_night;
+        private double max_day;
+        private double max_night;
+        private double avg_day;
+        private double avg_night;
 
-        public double getMaxtemp_c() {
-            return maxtemp_c;
+        public double getMin_day() {
+            return min_day;
         }
 
-        public void setMaxtemp_c(double maxtemp_c) {
-            this.maxtemp_c = maxtemp_c;
+        public void setMin_day(double min_day) {
+            this.min_day = min_day;
         }
 
-        public double getMintemp_c() {
-            return mintemp_c;
+        public double getMin_night() {
+            return min_night;
         }
 
-        public void setMintemp_c(double mintemp_c) {
-            this.mintemp_c = mintemp_c;
+        public void setMin_night(double min_night) {
+            this.min_night = min_night;
         }
 
-        public double getMaxwind_kph() {
-            return maxwind_kph;
+        public double getMax_day() {
+            return max_day;
         }
 
-        public void setMaxwind_kph(double maxwind_kph) {
-            this.maxwind_kph = maxwind_kph;
+        public void setMax_day(double max_day) {
+            this.max_day = max_day;
         }
 
-        public double getTotalprecip_mm() {
-            return totalprecip_mm;
+        public double getMax_night() {
+            return max_night;
         }
 
-        public void setTotalprecip_mm(double totalprecip_mm) {
-            this.totalprecip_mm = totalprecip_mm;
+        public void setMax_night(double max_night) {
+            this.max_night = max_night;
+        }
+
+        public double getAvg_day() {
+            return avg_day;
+        }
+
+        public void setAvg_day(double avg_day) {
+            this.avg_day = avg_day;
+        }
+
+        public double getAvg_night() {
+            return avg_night;
+        }
+
+        public void setAvg_night(double avg_night) {
+            this.avg_night = avg_night;
         }
     }
 
@@ -297,44 +364,63 @@ public class ResponseDTO {
         this.alerts = alerts;
     }
 
+    @Override
     public String toString() {
-        String rez = "";
-        rez += "Location:\n";
-        rez += "    Name: " + location.getName() + "\n";
-        rez += "    Region: " + location.getRegion() + "\n";
-        rez += "    Country: " + location.getCountry() + "\n";
-        rez += "    TZ ID: " + location.getTz_id() + "\n";
-        rez += "Current:\n";
-        rez += "    Temperature C: " + String.valueOf(current.getTemp_c()) + "\n";
-        rez += "    Wind KPH: " + String.valueOf(current.getWind_kph()) + "\n";
-        rez += "    Wind Dir: " + current.getWind_dir() + "\n";
-        rez += "    Precip mm: " + String.valueOf(current.getPrecip_mm()) + "\n";
-        if (this.current.getAir_quality() != null) {
-            rez += "    Air Quality:\n";
-            rez += "        CO: " + String.valueOf(this.current.getAir_quality().getCo()) + "\n";
-            rez += "        Gb_defra_index: " + String.valueOf(this.current.getAir_quality().getGb_defra_index()) + "\n";
+        StringBuilder sb = new StringBuilder();
+
+        if (location != null) {
+            sb.append("  Location:\n");
+            sb.append("  - Name: ").append(location.getName()).append("\n");
+            sb.append("  - Region: ").append(location.getRegion()).append("\n");
+            sb.append("  - Country: ").append(location.getCountry()).append("\n");
+            sb.append("  - Latitude: ").append(location.getLat()).append("\n");
+            sb.append("  - Longitude: ").append(location.getLon()).append("\n");
+            sb.append("  - Local Time: ").append(location.getLocaltime()).append("\n\n");
         }
-        rez += "Forecast:\n";
-        for (ForecastDayDTO f: this.forecast.getForecastday()) {
-            rez += "        Forecast Day:\n";
-            rez += "            Date: " + f.getDate() + "\n";
-            rez += "            Min Temp: " + String.valueOf(f.getDay().getMintemp_c()) + "\n";
-            rez += "            Max Temp: " + String.valueOf(f.getDay().getMaxtemp_c()) + "\n";
-            rez += "            Max Wind KPH: " + String.valueOf(f.getDay().getMaxwind_kph()) + "\n";
-            rez += "            Total Precip mm: " + String.valueOf(f.getDay().getTotalprecip_mm()) + "\n";
+
+        if (current != null) {
+            sb.append("   Current Weather:\n");
+            sb.append("  - Last Updated: ").append(current.getLast_updated()).append("\n");
+            sb.append("  - Temperature (C): ").append(current.getTemp_c()).append("\n");
+            sb.append("  - Wind Speed (kph): ").append(current.getWind_kph()).append("\n");
+            sb.append("  - Wind Direction: ").append(current.getWind_dir()).append("\n");
+            sb.append("  - Precipitation (mm): ").append(current.getPrecip_mm()).append("\n");
+            sb.append("  - Humidity (%): ").append(current.getHumidity()).append("\n");
+            if (current.getCondition() != null) {
+                sb.append("  - Condition: ").append(current.getCondition().getText()).append("\n");
+            }
+            sb.append("\n");
         }
-        if (!this.alerts.getAlert().isEmpty()) {
-            rez += "Alerts:\n";
-            for (AlertDTO a: this.alerts.getAlert()) {
-                rez += "    Alert:\n";
-                rez += "        Severity: " + a.getSeverity() + "\n";
-                rez += "        Certainty: " + a.getCertainty() + "\n";
-                rez += "        Event: " + a.getEvent() + "\n";
-                rez += "        Effective: " + a.getEffective() + "\n";
-                rez += "        Expires: " + a.getExpires() + "\n";
+
+        if (forecast != null && forecast.getForecastday() != null && !forecast.getForecastday().isEmpty()) {
+            sb.append("  Forecast:\n");
+            for (ForecastDayDTO day : forecast.getForecastday()) {
+                sb.append("  - Date: ").append(day.getDate()).append("\n");
+                if (day.getDay() != null) {
+                    sb.append("    * Min Day Temp: ").append(day.getDay().getMin_day()).append("°C\n");
+                    sb.append("    * Min Night Temp: ").append(day.getDay().getMin_night()).append("°C\n");
+                    sb.append("    * Max Day Temp: ").append(day.getDay().getMax_day()).append("°C\n");
+                    sb.append("    * Max Night Temp: ").append(day.getDay().getMax_night()).append("°C\n");
+                    sb.append("    * Avg Day Temp: ").append(day.getDay().getAvg_day()).append("°C\n");
+                    sb.append("    * Avg Night Temp: ").append(day.getDay().getAvg_night()).append("°C\n");
+                }
+                sb.append("\n");
             }
         }
-        return rez;
+
+        if (alerts != null && alerts.getAlert() != null && !alerts.getAlert().isEmpty()) {
+            sb.append("  Alerts:\n");
+            for (AlertDTO alert : alerts.getAlert()) {
+                sb.append("  - Event: ").append(alert.getEvent()).append("\n");
+                sb.append("    * Severity: ").append(alert.getSeverity()).append("\n");
+                sb.append("    * Certainty: ").append(alert.getCertainty()).append("\n");
+                sb.append("    * Effective: ").append(alert.getEffective()).append("\n");
+                sb.append("    * Expires: ").append(alert.getExpires()).append("\n");
+                sb.append("\n");
+            }
+        }
+
+        return sb.toString();
     }
 }
 

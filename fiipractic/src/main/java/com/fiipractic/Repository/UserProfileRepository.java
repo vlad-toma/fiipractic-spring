@@ -12,4 +12,6 @@ import java.util.Optional;
 public interface UserProfileRepository extends JpaRepository<UserProfile, Long> {
     @Query("SELECT up FROM UserProfile up WHERE up.user.id = :userId")
     Optional<UserProfile> customFindByUserId(@Param("userId") Long userId);
+
+    Optional<UserProfile> findByEmail(String email);
 }

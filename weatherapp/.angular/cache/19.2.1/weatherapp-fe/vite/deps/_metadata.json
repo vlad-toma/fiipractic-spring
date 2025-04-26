@@ -1,0 +1,142 @@
+{
+  "hash": "09d2c784",
+  "configHash": "1f509429",
+  "lockfileHash": "e04c5498",
+  "browserHash": "6f94d460",
+  "optimized": {
+    "@angular/cdk/bidi": {
+      "src": "../../../../../../node_modules/@angular/cdk/fesm2022/bidi.mjs",
+      "file": "@angular_cdk_bidi.js",
+      "fileHash": "36e1fe02",
+      "needsInterop": false
+    },
+    "@angular/common": {
+      "src": "../../../../../../node_modules/@angular/common/fesm2022/common.mjs",
+      "file": "@angular_common.js",
+      "fileHash": "64210259",
+      "needsInterop": false
+    },
+    "@angular/common/http": {
+      "src": "../../../../../../node_modules/@angular/common/fesm2022/http.mjs",
+      "file": "@angular_common_http.js",
+      "fileHash": "d168c211",
+      "needsInterop": false
+    },
+    "@angular/core": {
+      "src": "../../../../../../node_modules/@angular/core/fesm2022/core.mjs",
+      "file": "@angular_core.js",
+      "fileHash": "5772092a",
+      "needsInterop": false
+    },
+    "@angular/forms": {
+      "src": "../../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
+      "file": "@angular_forms.js",
+      "fileHash": "498244cf",
+      "needsInterop": false
+    },
+    "@angular/material/card": {
+      "src": "../../../../../../node_modules/@angular/material/fesm2022/card.mjs",
+      "file": "@angular_material_card.js",
+      "fileHash": "5747401e",
+      "needsInterop": false
+    },
+    "@angular/material/dialog": {
+      "src": "../../../../../../node_modules/@angular/material/fesm2022/dialog.mjs",
+      "file": "@angular_material_dialog.js",
+      "fileHash": "37549a4e",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "a7beb7af",
+      "needsInterop": false
+    },
+    "@angular/router": {
+      "src": "../../../../../../node_modules/@angular/router/fesm2022/router.mjs",
+      "file": "@angular_router.js",
+      "fileHash": "8dcd3265",
+      "needsInterop": false
+    },
+    "ng-openlayers": {
+      "src": "../../../../../../node_modules/ng-openlayers/fesm2022/ng-openlayers.mjs",
+      "file": "ng-openlayers.js",
+      "fileHash": "0ef2fb28",
+      "needsInterop": false
+    },
+    "ol/proj": {
+      "src": "../../../../../../node_modules/ol/proj.js",
+      "file": "ol_proj.js",
+      "fileHash": "428cfdeb",
+      "needsInterop": false
+    },
+    "rxjs": {
+      "src": "../../../../../../node_modules/rxjs/dist/esm5/index.js",
+      "file": "rxjs.js",
+      "fileHash": "bf2c1f58",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "packbits-OS7ZVUCF": {
+      "file": "packbits-OS7ZVUCF.js"
+    },
+    "lerc-CKJEMNXL": {
+      "file": "lerc-CKJEMNXL.js"
+    },
+    "webimage-QLJZYOY4": {
+      "file": "webimage-QLJZYOY4.js"
+    },
+    "decoder-JA7LUFNT": {
+      "file": "decoder-JA7LUFNT.js"
+    },
+    "chunk-YDSK76KG": {
+      "file": "chunk-YDSK76KG.js"
+    },
+    "raw-NOL3NLI7": {
+      "file": "raw-NOL3NLI7.js"
+    },
+    "lzw-IVD2PNRU": {
+      "file": "lzw-IVD2PNRU.js"
+    },
+    "jpeg-NQY2T355": {
+      "file": "jpeg-NQY2T355.js"
+    },
+    "deflate-KIZZFJ7J": {
+      "file": "deflate-KIZZFJ7J.js"
+    },
+    "chunk-QM7TJVTA": {
+      "file": "chunk-QM7TJVTA.js"
+    },
+    "chunk-JSOACJM5": {
+      "file": "chunk-JSOACJM5.js"
+    },
+    "chunk-6DOD7X7V": {
+      "file": "chunk-6DOD7X7V.js"
+    },
+    "chunk-SQWY32PP": {
+      "file": "chunk-SQWY32PP.js"
+    },
+    "chunk-F2HTPHYM": {
+      "file": "chunk-F2HTPHYM.js"
+    },
+    "chunk-SICSSCMF": {
+      "file": "chunk-SICSSCMF.js"
+    },
+    "chunk-VXONBJV4": {
+      "file": "chunk-VXONBJV4.js"
+    },
+    "chunk-VRDE2GZH": {
+      "file": "chunk-VRDE2GZH.js"
+    },
+    "chunk-2JMVCRHD": {
+      "file": "chunk-2JMVCRHD.js"
+    },
+    "chunk-P6U2JBMQ": {
+      "file": "chunk-P6U2JBMQ.js"
+    },
+    "chunk-4MWRP73S": {
+      "file": "chunk-4MWRP73S.js"
+    }
+  }
+}

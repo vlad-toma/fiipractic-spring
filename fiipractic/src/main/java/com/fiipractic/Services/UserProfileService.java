@@ -2,45 +2,95 @@ package com.fiipractic.Services;
 
 import com.fiipractic.DTO.UserProfileDTO;
 import com.fiipractic.Entity.GenericMapper;
+import com.fiipractic.Entity.User;
 import com.fiipractic.Entity.UserProfile;
 import com.fiipractic.Repository.UserProfileRepository;
+import com.fiipractic.Util.SecurityUtil;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CachePut;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 @Service
 public class UserProfileService {
     @Autowired
     private UserProfileRepository userProfileRepository;
 
-    public List<UserProfileDTO> getAllUserProfiles() {
-        return userProfileRepository.findAll().stream().map(GenericMapper::toUserProfileDTO).collect(Collectors.toList());
+    @Autowired
+    private SecurityUtil securityUtil;
+
+    @Cacheable("users")
+    public Optional<UserProfileDTO> getCurrentUserProfile() throws Exception {
+        Long userId = securityUtil.getCurrentUser().getId();
+        Optional<UserProfile> profile = userProfileRepository.customFindByUserId(userId);
+
+        if (profile.isEmpty()) {
+            throw new Exception("404");
+        }
+
+        return profile.map(GenericMapper::toUserProfileDTO);
     }
 
-    public Optional<UserProfileDTO> getUserProfileById(Long id) {
-        return userProfileRepository.findById(id).map(GenericMapper::toUserProfileDTO);
-    }
+    @CachePut(value = "users")
+    public UserProfileDTO createOrUpdateCurrentUserProfile(UserProfile userProfile) throws Exception {
+        User currentUser = securityUtil.getCurrentUser();
 
-    public UserProfileDTO createUserProfile(UserProfile userProfile) {
+        if (userProfile.getEmail() == null || userProfile.getEmailNotification() == null || userProfile.getWeatherApiKey() == null)
+            throw new Exception("422");
+
+        Optional<UserProfile> existingWithEmail = userProfileRepository.findByEmail(userProfile.getEmail());
+        if (existingWithEmail.isPresent() && !existingWithEmail.get().getUser().getId().equals(currentUser.getId())) {
+            throw new Exception("409");
+        }
+
+        userProfile.setUser(currentUser);
+
+        Optional<UserProfile> existingProfile = userProfileRepository.customFindByUserId(currentUser.getId());
+        if (existingProfile.isPresent()) {
+            userProfile.setId(existingProfile.get().getId());
+        }
+
         return GenericMapper.toUserProfileDTO(userProfileRepository.save(userProfile));
     }
 
-    public UserProfileDTO updateUserProfile(UserProfile userProfile) {
+    @CachePut(value = "users")
+    public UserProfileDTO updateUserProfile(UserProfile userProfile) throws Exception {
+        if (userProfile.getEmail() == null || userProfile.getEmailNotification() == null || userProfile.getWeatherApiKey() == null)
+            throw new Exception("422");
+
+        if (userProfileRepository.findByEmail(userProfile.getEmail()).isPresent())
+            throw new Exception("409");
+
+        if (userProfileRepository.customFindByUserId(userProfile.getUser().getId()).isEmpty())
+            throw new Exception("404");
+
         return GenericMapper.toUserProfileDTO(userProfileRepository.save(userProfile));
     }
 
-    public void deleteUserProfile(Long id) {
-        userProfileRepository.deleteById(id);
+    public void deleteCurrentUserProfile() throws Exception {
+        User currentUser = securityUtil.getCurrentUser();
+        Optional<UserProfile> profile = userProfileRepository.customFindByUserId(currentUser.getId());
+
+        if (profile.isEmpty()) {
+            throw new Exception("404");
+        }
+
+        UserProfile userProfile = profile.get();
+
+        currentUser.setUserProfile(null);
+        userProfile.setUser(null);
+
+        userProfileRepository.delete(userProfile);
     }
 
-    public Optional<UserProfile> getFullUserProfileById(Long id) {
-        return userProfileRepository.findById(id);
-    }
-
+    @Cacheable("users")
     public Optional<UserProfile> getUserProfileByUsername(Long id) {
         return userProfileRepository.customFindByUserId(id);
+    }
+
+    public Optional<UserProfileDTO> customFindByUserId(Long id) {
+        return userProfileRepository.customFindByUserId(id).map(GenericMapper::toUserProfileDTO);
     }
 }
