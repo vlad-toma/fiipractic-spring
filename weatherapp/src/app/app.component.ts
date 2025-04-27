@@ -10,7 +10,7 @@ import { transform } from 'ol/proj';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { DialogComponent } from './dialog/dialog.component';
 import { WeatherResponse } from './model/weather-response';
-import * as data from '../../data.json';
+import * as data from '../assets/data.json';
 import { AppService } from './app.service';
 import { LoginComponent } from './login/login.component';
 import { CommonModule } from '@angular/common';

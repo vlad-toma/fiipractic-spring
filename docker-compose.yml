@@ -1,0 +1,40 @@
+services:
+  mysql:
+    image: mysql:latest  
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: fiipractic
+      MYSQL_USER: user
+      MYSQL_PASSWORD: pass
+    ports:
+      - "3307:3306" 
+    volumes:
+      - fiipractic-sql:/var/lib/mysql 
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+
+  fiipractic-api:
+    image: fiipractic:latest 
+    build:
+      context: ./fiipractic  
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/fiipractic
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=password
+    depends_on:
+      - mysql 
+    ports:
+      - "8081:8081" 
+
+  weatherapp-fe:
+    image: weatherapp:latest 
+    build:
+      context: ./weatherapp  
+    ports:
+      - "8080:80"  
+    depends_on:
+      - fiipractic-api  
+    restart: always
+
+volumes:
+  fiipractic-sql:
+  
