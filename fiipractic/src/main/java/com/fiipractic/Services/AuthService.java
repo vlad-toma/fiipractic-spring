@@ -10,10 +10,14 @@ import java.util.Optional;
 
 @Service
 public class AuthService {
+    private final UserRepository userRepository;
+    private final PasswordEncoder passwordEncoder;
+
     @Autowired
-    UserRepository userRepository;
-    @Autowired
-    PasswordEncoder passwordEncoder;
+    public AuthService(UserRepository userRepository, PasswordEncoder passwordEncoder) {
+        this.userRepository = userRepository;
+        this.passwordEncoder = passwordEncoder;
+    }
 
     public void authenticate(String username, String password) throws Exception {
         Optional<User> userOpt = userRepository.findByUsername(username);

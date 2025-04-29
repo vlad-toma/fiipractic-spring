@@ -6,10 +6,15 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class EmailService {
+    private final JavaMailSender mailSender;
+
     @Autowired
-    private JavaMailSender mailSender;
+    public EmailService(JavaMailSender mailSender) {
+        this.mailSender = mailSender;
+    }
 
     public void sendEmail(String to, String subject, String body) {
+        // Daca decomentezi ar trebui sa mearga mailul
         /*SimpleMailMessage message = new SimpleMailMessage();
         message.setTo(to);
         message.setSubject(subject);

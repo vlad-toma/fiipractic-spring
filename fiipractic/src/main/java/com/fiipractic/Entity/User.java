@@ -8,8 +8,6 @@ import java.util.Set;
 
 @Entity
 @Table(name = "user")
-@AllArgsConstructor
-@NoArgsConstructor
 public class User {
     @Id
     @Column(nullable = false)
@@ -30,6 +28,18 @@ public class User {
 
     @OneToMany(mappedBy = "user")
     private Set<RequestHistory> requestHistories;
+
+    public User() {
+    }
+
+    public User(Long id, String name, String username, String password, UserProfile userProfile, Set<RequestHistory> requestHistories) {
+        this.id = id;
+        this.name = name;
+        this.username = username;
+        this.password = password;
+        this.userProfile = userProfile;
+        this.requestHistories = requestHistories;
+    }
 
     public Long getId() {
         return id;

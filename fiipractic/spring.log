@@ -1,36 +1,361 @@
-2025-04-27T12:40:29.381+03:00  INFO 16876 --- [fiipractic] [main] com.fiipractic.FiipracticApplication     : Starting FiipracticApplication using Java 21.0.6 with PID 16876 (C:\Users\Vlad\Desktop\spring nou\git\fiipractic-spring\fiipractic\target\classes started by Vlad in C:\Users\Vlad\Desktop\spring nou\git\fiipractic-spring\fiipractic)
-2025-04-27T12:40:29.385+03:00  INFO 16876 --- [fiipractic] [main] com.fiipractic.FiipracticApplication     : No active profile set, falling back to 1 default profile: "default"
-2025-04-27T12:40:30.151+03:00  INFO 16876 --- [fiipractic] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-04-27T12:40:30.206+03:00  INFO 16876 --- [fiipractic] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 3 JPA repository interfaces.
-2025-04-27T12:40:30.870+03:00  INFO 16876 --- [fiipractic] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2025-04-27T12:40:30.883+03:00  INFO 16876 --- [fiipractic] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-04-27T12:40:30.883+03:00  INFO 16876 --- [fiipractic] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
-2025-04-27T12:40:30.940+03:00  INFO 16876 --- [fiipractic] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-04-27T12:40:30.940+03:00  INFO 16876 --- [fiipractic] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1515 ms
-2025-04-27T12:40:31.131+03:00  INFO 16876 --- [fiipractic] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-04-27T12:40:31.203+03:00  INFO 16876 --- [fiipractic] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
-2025-04-27T12:40:31.243+03:00  INFO 16876 --- [fiipractic] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-04-27T12:40:31.515+03:00  INFO 16876 --- [fiipractic] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-04-27T12:40:31.545+03:00  INFO 16876 --- [fiipractic] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-04-27T12:40:31.900+03:00  INFO 16876 --- [fiipractic] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@21c99abf
-2025-04-27T12:40:31.901+03:00  INFO 16876 --- [fiipractic] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-04-27T12:40:31.985+03:00  INFO 16876 --- [fiipractic] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 9.2
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-04-27T12:40:32.881+03:00  INFO 16876 --- [fiipractic] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-04-27T12:40:32.967+03:00  INFO 16876 --- [fiipractic] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-04-27T12:40:33.368+03:00  INFO 16876 --- [fiipractic] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-04-27T12:40:33.929+03:00  WARN 16876 --- [fiipractic] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-04-27T12:40:33.957+03:00  INFO 16876 --- [fiipractic] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
-2025-04-27T12:40:34.642+03:00  INFO 16876 --- [fiipractic] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
-2025-04-27T12:40:34.649+03:00  INFO 16876 --- [fiipractic] [main] com.fiipractic.FiipracticApplication     : Started FiipracticApplication in 5.677 seconds (process running for 6.82)
-2025-04-27T14:06:45.126+03:00  INFO 16876 --- [fiipractic] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-04-27T14:06:45.137+03:00  INFO 16876 --- [fiipractic] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-04-27T14:06:45.145+03:00  INFO 16876 --- [fiipractic] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-04-27T14:06:45.152+03:00  INFO 16876 --- [fiipractic] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-04-27T14:06:45.163+03:00  INFO 16876 --- [fiipractic] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-29T14:41:52.219+03:00  INFO 3892 --- [fiipractic] [main] c.f.RequestHistoryControllerTest         : Starting RequestHistoryControllerTest using Java 21.0.6 with PID 3892 (started by Vlad in C:\Users\Vlad\Desktop\spring nou\git\fiipractic-spring\fiipractic)
+2025-04-29T14:41:52.223+03:00  INFO 3892 --- [fiipractic] [main] c.f.RequestHistoryControllerTest         : No active profile set, falling back to 1 default profile: "default"
+2025-04-29T14:41:54.476+03:00  WARN 3892 --- [fiipractic] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 903e1b1e-e2ae-4a26-b49c-02a0d650d5e1
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-04-29T14:41:54.521+03:00  INFO 3892 --- [fiipractic] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-04-29T14:41:54.871+03:00  INFO 3892 --- [fiipractic] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-04-29T14:41:54.871+03:00  INFO 3892 --- [fiipractic] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-04-29T14:41:54.873+03:00  INFO 3892 --- [fiipractic] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2025-04-29T14:41:54.917+03:00  INFO 3892 --- [fiipractic] [main] c.f.RequestHistoryControllerTest         : Started RequestHistoryControllerTest in 3.148 seconds (process running for 4.423)
+2025-04-29T14:45:00.227+03:00  INFO 17692 --- [fiipractic] [main] c.f.RequestHistoryControllerTest         : Starting RequestHistoryControllerTest using Java 21.0.6 with PID 17692 (started by Vlad in C:\Users\Vlad\Desktop\spring nou\git\fiipractic-spring\fiipractic)
+2025-04-29T14:45:00.228+03:00  INFO 17692 --- [fiipractic] [main] c.f.RequestHistoryControllerTest         : No active profile set, falling back to 1 default profile: "default"
+2025-04-29T14:45:02.649+03:00  WARN 17692 --- [fiipractic] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: aff5889f-6461-4242-8011-5b74d4dc3486
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-04-29T14:45:02.699+03:00  INFO 17692 --- [fiipractic] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-04-29T14:45:03.096+03:00  INFO 17692 --- [fiipractic] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-04-29T14:45:03.096+03:00  INFO 17692 --- [fiipractic] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-04-29T14:45:03.099+03:00  INFO 17692 --- [fiipractic] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2025-04-29T14:45:03.165+03:00  INFO 17692 --- [fiipractic] [main] c.f.RequestHistoryControllerTest         : Started RequestHistoryControllerTest in 3.386 seconds (process running for 4.84)
+2025-04-29T14:47:14.967+03:00  INFO 22708 --- [fiipractic] [main] c.f.RequestHistoryControllerTest         : Starting RequestHistoryControllerTest using Java 21.0.6 with PID 22708 (started by Vlad in C:\Users\Vlad\Desktop\spring nou\git\fiipractic-spring\fiipractic)
+2025-04-29T14:47:14.969+03:00  INFO 22708 --- [fiipractic] [main] c.f.RequestHistoryControllerTest         : No active profile set, falling back to 1 default profile: "default"
+2025-04-29T14:47:17.049+03:00  WARN 22708 --- [fiipractic] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 03eccc11-7b1b-4002-a1cf-e23fd0ed4f0b
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-04-29T14:47:17.083+03:00  INFO 22708 --- [fiipractic] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-04-29T14:47:17.375+03:00  INFO 22708 --- [fiipractic] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-04-29T14:47:17.375+03:00  INFO 22708 --- [fiipractic] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-04-29T14:47:17.376+03:00  INFO 22708 --- [fiipractic] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-04-29T14:47:17.417+03:00  INFO 22708 --- [fiipractic] [main] c.f.RequestHistoryControllerTest         : Started RequestHistoryControllerTest in 2.882 seconds (process running for 3.968)
+2025-04-29T14:49:46.982+03:00  INFO 22184 --- [fiipractic] [main] c.f.RequestHistoryControllerTest         : Starting RequestHistoryControllerTest using Java 21.0.6 with PID 22184 (started by Vlad in C:\Users\Vlad\Desktop\spring nou\git\fiipractic-spring\fiipractic)
+2025-04-29T14:49:46.983+03:00  INFO 22184 --- [fiipractic] [main] c.f.RequestHistoryControllerTest         : No active profile set, falling back to 1 default profile: "default"
+2025-04-29T14:49:49.063+03:00  WARN 22184 --- [fiipractic] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 49e2cc0d-0dd2-4ab8-a12f-a99388e30b9e
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-04-29T14:49:49.102+03:00  INFO 22184 --- [fiipractic] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-04-29T14:49:49.379+03:00  INFO 22184 --- [fiipractic] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-04-29T14:49:49.379+03:00  INFO 22184 --- [fiipractic] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-04-29T14:49:49.381+03:00  INFO 22184 --- [fiipractic] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-04-29T14:49:49.419+03:00  INFO 22184 --- [fiipractic] [main] c.f.RequestHistoryControllerTest         : Started RequestHistoryControllerTest in 2.826 seconds (process running for 3.847)
+2025-04-29T14:56:36.558+03:00  INFO 19804 --- [fiipractic] [main] c.f.RequestHistoryControllerTest         : Starting RequestHistoryControllerTest using Java 21.0.6 with PID 19804 (started by Vlad in C:\Users\Vlad\Desktop\spring nou\git\fiipractic-spring\fiipractic)
+2025-04-29T14:56:36.559+03:00  INFO 19804 --- [fiipractic] [main] c.f.RequestHistoryControllerTest         : No active profile set, falling back to 1 default profile: "default"
+2025-04-29T14:56:38.746+03:00  WARN 19804 --- [fiipractic] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 377c0642-bd9a-42c1-bc34-fbcb2c903bb0
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-04-29T14:56:38.784+03:00  INFO 19804 --- [fiipractic] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-04-29T14:56:39.081+03:00  INFO 19804 --- [fiipractic] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-04-29T14:56:39.081+03:00  INFO 19804 --- [fiipractic] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-04-29T14:56:39.084+03:00  INFO 19804 --- [fiipractic] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2025-04-29T14:56:39.124+03:00  INFO 19804 --- [fiipractic] [main] c.f.RequestHistoryControllerTest         : Started RequestHistoryControllerTest in 2.957 seconds (process running for 3.97)
+2025-04-29T14:58:22.388+03:00  INFO 5516 --- [fiipractic] [main] c.f.RequestHistoryControllerTest         : Starting RequestHistoryControllerTest using Java 21.0.6 with PID 5516 (started by Vlad in C:\Users\Vlad\Desktop\spring nou\git\fiipractic-spring\fiipractic)
+2025-04-29T14:58:22.389+03:00  INFO 5516 --- [fiipractic] [main] c.f.RequestHistoryControllerTest         : No active profile set, falling back to 1 default profile: "default"
+2025-04-29T14:58:24.447+03:00  WARN 5516 --- [fiipractic] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 07cfae41-4aa2-47af-a9f5-f465f6a21024
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-04-29T14:58:24.478+03:00  INFO 5516 --- [fiipractic] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-04-29T14:58:24.760+03:00  INFO 5516 --- [fiipractic] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-04-29T14:58:24.760+03:00  INFO 5516 --- [fiipractic] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-04-29T14:58:24.762+03:00  INFO 5516 --- [fiipractic] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2025-04-29T14:58:24.798+03:00  INFO 5516 --- [fiipractic] [main] c.f.RequestHistoryControllerTest         : Started RequestHistoryControllerTest in 2.795 seconds (process running for 3.8)
+2025-04-29T15:04:39.788+03:00  INFO 6912 --- [fiipractic] [main] c.f.RequestHistoryControllerTest         : Starting RequestHistoryControllerTest using Java 21.0.6 with PID 6912 (started by Vlad in C:\Users\Vlad\Desktop\spring nou\git\fiipractic-spring\fiipractic)
+2025-04-29T15:04:39.789+03:00  INFO 6912 --- [fiipractic] [main] c.f.RequestHistoryControllerTest         : No active profile set, falling back to 1 default profile: "default"
+2025-04-29T15:04:41.468+03:00  WARN 6912 --- [fiipractic] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 16f57894-cdc3-4280-902a-e4940b37f953
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-04-29T15:04:41.506+03:00  INFO 6912 --- [fiipractic] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-04-29T15:04:42.394+03:00  INFO 6912 --- [fiipractic] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-04-29T15:04:42.394+03:00  INFO 6912 --- [fiipractic] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-04-29T15:04:42.398+03:00  INFO 6912 --- [fiipractic] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2025-04-29T15:04:42.443+03:00  INFO 6912 --- [fiipractic] [main] c.f.RequestHistoryControllerTest         : Started RequestHistoryControllerTest in 3.075 seconds (process running for 4.093)
+2025-04-29T15:04:42.612+03:00  WARN 6912 --- [fiipractic] [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<?> com.fiipractic.Controllers.RequestHistoryController.createRequestHistory(com.fiipractic.Entity.RequestHistory)]
+2025-04-29T15:05:02.519+03:00  INFO 10328 --- [fiipractic] [main] c.f.RequestHistoryControllerTest         : Starting RequestHistoryControllerTest using Java 21.0.6 with PID 10328 (started by Vlad in C:\Users\Vlad\Desktop\spring nou\git\fiipractic-spring\fiipractic)
+2025-04-29T15:05:02.520+03:00  INFO 10328 --- [fiipractic] [main] c.f.RequestHistoryControllerTest         : No active profile set, falling back to 1 default profile: "default"
+2025-04-29T15:05:04.090+03:00  WARN 10328 --- [fiipractic] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ef8c6d00-a990-49b7-9aaf-ce712f70041d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-04-29T15:05:04.125+03:00  INFO 10328 --- [fiipractic] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-04-29T15:05:04.922+03:00  INFO 10328 --- [fiipractic] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-04-29T15:05:04.922+03:00  INFO 10328 --- [fiipractic] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-04-29T15:05:04.924+03:00  INFO 10328 --- [fiipractic] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2025-04-29T15:05:04.963+03:00  INFO 10328 --- [fiipractic] [main] c.f.RequestHistoryControllerTest         : Started RequestHistoryControllerTest in 2.828 seconds (process running for 3.839)
+2025-04-29T15:05:13.366+03:00  INFO 22972 --- [fiipractic] [main] c.f.RequestHistoryControllerTest         : Starting RequestHistoryControllerTest using Java 21.0.6 with PID 22972 (started by Vlad in C:\Users\Vlad\Desktop\spring nou\git\fiipractic-spring\fiipractic)
+2025-04-29T15:05:13.367+03:00  INFO 22972 --- [fiipractic] [main] c.f.RequestHistoryControllerTest         : No active profile set, falling back to 1 default profile: "default"
+2025-04-29T15:05:15.062+03:00  WARN 22972 --- [fiipractic] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: a5a90894-4f9f-4985-9560-17ad4686f2d6
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-04-29T15:05:15.102+03:00  INFO 22972 --- [fiipractic] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-04-29T15:05:15.901+03:00  INFO 22972 --- [fiipractic] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-04-29T15:05:15.901+03:00  INFO 22972 --- [fiipractic] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-04-29T15:05:15.904+03:00  INFO 22972 --- [fiipractic] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-04-29T15:05:15.943+03:00  INFO 22972 --- [fiipractic] [main] c.f.RequestHistoryControllerTest         : Started RequestHistoryControllerTest in 2.998 seconds (process running for 4.043)
+2025-04-29T15:05:16.137+03:00  WARN 22972 --- [fiipractic] [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<?> com.fiipractic.Controllers.RequestHistoryController.createRequestHistory(com.fiipractic.Entity.RequestHistory)]
+2025-04-29T15:07:15.750+03:00  INFO 21180 --- [fiipractic] [main] c.f.RequestHistoryControllerTest         : Starting RequestHistoryControllerTest using Java 21.0.6 with PID 21180 (started by Vlad in C:\Users\Vlad\Desktop\spring nou\git\fiipractic-spring\fiipractic)
+2025-04-29T15:07:15.751+03:00  INFO 21180 --- [fiipractic] [main] c.f.RequestHistoryControllerTest         : No active profile set, falling back to 1 default profile: "default"
+2025-04-29T15:07:17.415+03:00  WARN 21180 --- [fiipractic] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 6222c9fa-c493-48bd-be0f-83596a8d1032
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-04-29T15:07:17.449+03:00  INFO 21180 --- [fiipractic] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-04-29T15:07:18.219+03:00  INFO 21180 --- [fiipractic] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-04-29T15:07:18.219+03:00  INFO 21180 --- [fiipractic] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-04-29T15:07:18.221+03:00  INFO 21180 --- [fiipractic] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2025-04-29T15:07:18.257+03:00  INFO 21180 --- [fiipractic] [main] c.f.RequestHistoryControllerTest         : Started RequestHistoryControllerTest in 2.907 seconds (process running for 3.957)
+2025-04-29T15:07:18.468+03:00  WARN 21180 --- [fiipractic] [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'application/octet-stream' is not supported]
+2025-04-29T15:08:08.475+03:00  INFO 4432 --- [fiipractic] [main] c.f.RequestHistoryControllerTest         : Starting RequestHistoryControllerTest using Java 21.0.6 with PID 4432 (started by Vlad in C:\Users\Vlad\Desktop\spring nou\git\fiipractic-spring\fiipractic)
+2025-04-29T15:08:08.476+03:00  INFO 4432 --- [fiipractic] [main] c.f.RequestHistoryControllerTest         : No active profile set, falling back to 1 default profile: "default"
+2025-04-29T15:08:10.064+03:00  WARN 4432 --- [fiipractic] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: aa2381bf-428a-4502-bdee-f3e2be71a802
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-04-29T15:08:10.094+03:00  INFO 4432 --- [fiipractic] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-04-29T15:08:10.865+03:00  INFO 4432 --- [fiipractic] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-04-29T15:08:10.865+03:00  INFO 4432 --- [fiipractic] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-04-29T15:08:10.866+03:00  INFO 4432 --- [fiipractic] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-04-29T15:08:10.903+03:00  INFO 4432 --- [fiipractic] [main] c.f.RequestHistoryControllerTest         : Started RequestHistoryControllerTest in 2.813 seconds (process running for 3.881)
+2025-04-29T15:12:12.036+03:00  INFO 20240 --- [fiipractic] [main] c.f.RequestHistoryControllerTest         : Starting RequestHistoryControllerTest using Java 21.0.6 with PID 20240 (started by Vlad in C:\Users\Vlad\Desktop\spring nou\git\fiipractic-spring\fiipractic)
+2025-04-29T15:12:12.037+03:00  INFO 20240 --- [fiipractic] [main] c.f.RequestHistoryControllerTest         : No active profile set, falling back to 1 default profile: "default"
+2025-04-29T15:12:13.672+03:00  WARN 20240 --- [fiipractic] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 43a4699c-4adc-419a-8d00-886a19b75fff
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-04-29T15:12:13.709+03:00  INFO 20240 --- [fiipractic] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-04-29T15:12:14.506+03:00  INFO 20240 --- [fiipractic] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-04-29T15:12:14.507+03:00  INFO 20240 --- [fiipractic] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-04-29T15:12:14.508+03:00  INFO 20240 --- [fiipractic] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-04-29T15:12:14.550+03:00  INFO 20240 --- [fiipractic] [main] c.f.RequestHistoryControllerTest         : Started RequestHistoryControllerTest in 2.942 seconds (process running for 3.951)
+2025-04-29T15:13:30.308+03:00  INFO 10248 --- [fiipractic] [main] c.f.RequestHistoryControllerTest         : Starting RequestHistoryControllerTest using Java 21.0.6 with PID 10248 (started by Vlad in C:\Users\Vlad\Desktop\spring nou\git\fiipractic-spring\fiipractic)
+2025-04-29T15:13:30.309+03:00  INFO 10248 --- [fiipractic] [main] c.f.RequestHistoryControllerTest         : No active profile set, falling back to 1 default profile: "default"
+2025-04-29T15:13:31.885+03:00  WARN 10248 --- [fiipractic] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 90199dd2-583a-4996-b815-f1c6b5a97aad
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-04-29T15:13:31.917+03:00  INFO 10248 --- [fiipractic] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-04-29T15:13:32.701+03:00  INFO 10248 --- [fiipractic] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-04-29T15:13:32.701+03:00  INFO 10248 --- [fiipractic] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-04-29T15:13:32.705+03:00  INFO 10248 --- [fiipractic] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 4 ms
+2025-04-29T15:13:32.750+03:00  INFO 10248 --- [fiipractic] [main] c.f.RequestHistoryControllerTest         : Started RequestHistoryControllerTest in 2.822 seconds (process running for 3.828)
+2025-04-29T15:17:02.890+03:00  INFO 22020 --- [fiipractic] [main] c.f.RequestHistoryControllerTest         : Starting RequestHistoryControllerTest using Java 21.0.6 with PID 22020 (started by Vlad in C:\Users\Vlad\Desktop\spring nou\git\fiipractic-spring\fiipractic)
+2025-04-29T15:17:02.892+03:00  INFO 22020 --- [fiipractic] [main] c.f.RequestHistoryControllerTest         : No active profile set, falling back to 1 default profile: "default"
+2025-04-29T15:17:04.517+03:00  WARN 22020 --- [fiipractic] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 4e38d84a-46ad-4624-8c1e-1a18114b8618
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-04-29T15:17:04.549+03:00  INFO 22020 --- [fiipractic] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-04-29T15:17:05.377+03:00  INFO 22020 --- [fiipractic] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-04-29T15:17:05.377+03:00  INFO 22020 --- [fiipractic] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-04-29T15:17:05.379+03:00  INFO 22020 --- [fiipractic] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2025-04-29T15:17:05.416+03:00  INFO 22020 --- [fiipractic] [main] c.f.RequestHistoryControllerTest         : Started RequestHistoryControllerTest in 2.912 seconds (process running for 3.902)
+2025-04-29T15:18:58.691+03:00  INFO 8236 --- [fiipractic] [main] c.f.RequestHistoryControllerTest         : Starting RequestHistoryControllerTest using Java 21.0.6 with PID 8236 (started by Vlad in C:\Users\Vlad\Desktop\spring nou\git\fiipractic-spring\fiipractic)
+2025-04-29T15:18:58.692+03:00  INFO 8236 --- [fiipractic] [main] c.f.RequestHistoryControllerTest         : No active profile set, falling back to 1 default profile: "default"
+2025-04-29T15:19:00.290+03:00  WARN 8236 --- [fiipractic] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 026bc2df-c8c5-41da-996c-61d10e23a1ee
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-04-29T15:19:00.326+03:00  INFO 8236 --- [fiipractic] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-04-29T15:19:01.134+03:00  INFO 8236 --- [fiipractic] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-04-29T15:19:01.134+03:00  INFO 8236 --- [fiipractic] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-04-29T15:19:01.136+03:00  INFO 8236 --- [fiipractic] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-04-29T15:19:01.175+03:00  INFO 8236 --- [fiipractic] [main] c.f.RequestHistoryControllerTest         : Started RequestHistoryControllerTest in 2.873 seconds (process running for 3.886)
+2025-04-29T15:57:59.902+03:00  INFO 14732 --- [fiipractic] [main] com.fiipractic.FiipracticApplication     : Starting FiipracticApplication using Java 21.0.6 with PID 14732 (C:\Users\Vlad\Desktop\spring nou\git\fiipractic-spring\fiipractic\target\classes started by Vlad in C:\Users\Vlad\Desktop\spring nou\git\fiipractic-spring\fiipractic)
+2025-04-29T15:57:59.904+03:00  INFO 14732 --- [fiipractic] [main] com.fiipractic.FiipracticApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-04-29T15:58:00.575+03:00  INFO 14732 --- [fiipractic] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-29T15:58:00.626+03:00  INFO 14732 --- [fiipractic] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 3 JPA repository interfaces.
+2025-04-29T15:58:01.261+03:00  INFO 14732 --- [fiipractic] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-04-29T15:58:01.276+03:00  INFO 14732 --- [fiipractic] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-29T15:58:01.276+03:00  INFO 14732 --- [fiipractic] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-29T15:58:01.333+03:00  INFO 14732 --- [fiipractic] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-29T15:58:01.333+03:00  INFO 14732 --- [fiipractic] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1393 ms
+2025-04-29T15:58:01.524+03:00  INFO 14732 --- [fiipractic] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-29T15:58:01.594+03:00  INFO 14732 --- [fiipractic] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-29T15:58:01.636+03:00  INFO 14732 --- [fiipractic] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-29T15:58:01.932+03:00  INFO 14732 --- [fiipractic] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-29T15:58:01.968+03:00  INFO 14732 --- [fiipractic] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-29T15:58:03.075+03:00  WARN 14732 --- [fiipractic] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 08S01
+2025-04-29T15:58:03.075+03:00 ERROR 14732 --- [fiipractic] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2025-04-29T15:58:03.081+03:00  WARN 14732 --- [fiipractic] [main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
+
+org.hibernate.exception.JDBCConnectionException: unable to obtain isolated JDBC connection [Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:100) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:320) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.5.jar:6.2.5]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.5.jar:6.2.5]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.5.jar:6.2.5]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.5.jar:6.2.5]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:347) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.5.jar:6.2.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.5.jar:6.2.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.4.jar:3.4.4]
+	at com.fiipractic.FiipracticApplication.main(FiipracticApplication.java:11) ~[classes/:na]
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-5.1.0.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:467) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	... 35 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[na:na]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:79) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:142) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:961) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	... 48 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:751) ~[na:na]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:144) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:53) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	... 51 common frames omitted
+
+2025-04-29T15:58:03.087+03:00 ERROR 14732 --- [fiipractic] [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+2025-04-29T15:58:03.087+03:00  WARN 14732 --- [fiipractic] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+2025-04-29T15:58:03.089+03:00  INFO 14732 --- [fiipractic] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-04-29T15:58:03.099+03:00  INFO 14732 --- [fiipractic] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-04-29T15:58:03.114+03:00 ERROR 14732 --- [fiipractic] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1812) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:347) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.5.jar:6.2.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.5.jar:6.2.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.4.jar:3.4.4]
+	at com.fiipractic.FiipracticApplication.main(FiipracticApplication.java:11) ~[classes/:na]
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:276) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.5.jar:6.2.5]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.5.jar:6.2.5]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.5.jar:6.2.5]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.5.jar:6.2.5]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808) ~[spring-beans-6.2.5.jar:6.2.5]
+	... 15 common frames omitted
+Caused by: org.hibernate.HibernateException: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:191) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:87) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentWithDefaults(JdbcEnvironmentInitiator.java:181) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:392) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	... 30 common frames omitted
+

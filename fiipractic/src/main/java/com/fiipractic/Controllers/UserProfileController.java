@@ -15,11 +15,14 @@ import java.util.Optional;
 @RestController
 @RequestMapping("profile")
 public class UserProfileController {
-    @Autowired
-    private UserProfileService userProfileService;
+    private final UserProfileService userProfileService;
+    private final SecurityUtil securityUtil;
 
     @Autowired
-    private SecurityUtil securityUtil;
+    public UserProfileController(UserProfileService userProfileService, SecurityUtil securityUtil) {
+        this.userProfileService = userProfileService;
+        this.securityUtil = securityUtil;
+    }
 
     @GetMapping
     public ResponseEntity<?> getCurrentUserProfile() {

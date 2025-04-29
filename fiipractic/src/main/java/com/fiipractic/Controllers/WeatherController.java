@@ -19,9 +19,14 @@ import java.util.concurrent.ThreadPoolExecutor;
 @RequestMapping("weather")
 @RestController
 public class WeatherController {
-    @Autowired
-    private WeatherService weatherService;
+    private final WeatherService weatherService;
     private final ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newCachedThreadPool();
+
+    @Autowired
+    public WeatherController(WeatherService weatherService) {
+        this.weatherService = weatherService;
+    }
+
     @GetMapping("/details")
     private ResponseEntity<?> getDetails(
             @RequestParam(defaultValue = "12") String lat,

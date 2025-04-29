@@ -15,11 +15,14 @@ import java.util.Optional;
 
 @Service
 public class UserProfileService {
-    @Autowired
-    private UserProfileRepository userProfileRepository;
+    private final UserProfileRepository userProfileRepository;
+    private final SecurityUtil securityUtil;
 
     @Autowired
-    private SecurityUtil securityUtil;
+    public UserProfileService(UserProfileRepository userProfileRepository, SecurityUtil securityUtil) {
+        this.userProfileRepository = userProfileRepository;
+        this.securityUtil = securityUtil;
+    }
 
     @Cacheable("users")
     public Optional<UserProfileDTO> getCurrentUserProfile() throws Exception {

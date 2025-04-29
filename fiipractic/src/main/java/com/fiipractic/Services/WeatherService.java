@@ -19,19 +19,17 @@ import java.util.Optional;
 
 @Service
 public class WeatherService {
-    @Autowired
-    private RequestHistoryService requestHistoryService;
-
-    @Autowired
-    private SecurityUtil securityUtil;
-
-    @Autowired
-    private UserProfileService userProfileService;
-
-    @Autowired
-    private EmailService emailService;
-
+    private final SecurityUtil securityUtil;
+    private final UserProfileService userProfileService;
+    private final EmailService emailService;
     private final ObjectMapper objectMapper = new ObjectMapper();
+
+    @Autowired
+    public WeatherService(SecurityUtil securityUtil, UserProfileService userProfileService, EmailService emailService) {
+        this.securityUtil = securityUtil;
+        this.userProfileService = userProfileService;
+        this.emailService = emailService;
+    }
 
     public ResponseDTO callLink(String Url) throws IOException {
         URL url = new URL(Url);

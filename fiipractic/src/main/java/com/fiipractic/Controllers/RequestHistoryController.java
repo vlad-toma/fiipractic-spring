@@ -14,8 +14,12 @@ import java.util.List;
 @RestController
 @RequestMapping("history")
 public class RequestHistoryController {
+    private final RequestHistoryService requestHistoryService;
+
     @Autowired
-    private RequestHistoryService requestHistoryService;
+    public RequestHistoryController(RequestHistoryService requestHistoryService) {
+        this.requestHistoryService = requestHistoryService;
+    }
 
     @PostMapping
     public ResponseEntity<?> createRequestHistory(@RequestBody RequestHistory requestHistory) {

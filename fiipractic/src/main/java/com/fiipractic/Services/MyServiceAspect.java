@@ -20,11 +20,14 @@ public class MyServiceAspect {
     @Pointcut("execution(* com.fiipractic.Services.WeatherService.getDetails(..))")
     public void createRequestHistory() {}
 
-    @Autowired
-    private RequestHistoryService requestHistoryService;
+    private final RequestHistoryService requestHistoryService;
+    private final SecurityUtil securityUtil;
 
     @Autowired
-    private SecurityUtil securityUtil;
+    public MyServiceAspect(RequestHistoryService requestHistoryService, SecurityUtil securityUtil) {
+        this.requestHistoryService = requestHistoryService;
+        this.securityUtil = securityUtil;
+    }
 
     @Around("createRequestHistory()")
     public Object aroundGetDetails(ProceedingJoinPoint joinPoint) throws Throwable {

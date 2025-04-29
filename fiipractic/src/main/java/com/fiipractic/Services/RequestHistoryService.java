@@ -13,11 +13,14 @@ import java.util.List;
 
 @Service
 public class RequestHistoryService {
-    @Autowired
-    private RequestHistoryRepository requestHistoryRepository;
+    private final RequestHistoryRepository requestHistoryRepository;
+    private final SecurityUtil securityUtil;
 
     @Autowired
-    private SecurityUtil securityUtil;
+    public RequestHistoryService(RequestHistoryRepository requestHistoryRepository, SecurityUtil securityUtil) {
+        this.requestHistoryRepository = requestHistoryRepository;
+        this.securityUtil = securityUtil;
+    }
 
     public RequestHistory createRequestHistory(RequestHistory requestHistory) throws Exception {
         if (requestHistory.getId() != null) {
