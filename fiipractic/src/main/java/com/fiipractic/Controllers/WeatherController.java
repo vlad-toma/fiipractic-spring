@@ -11,10 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.Callable;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
-import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.*;
 
 @RequestMapping("weather")
 @RestController
@@ -70,5 +67,34 @@ public class WeatherController {
         }
 
         return new ResponseEntity<>(responses, HttpStatus.OK);
+    }
+
+    @GetMapping("/details3virtual")
+    private ResponseEntity<?> getDetails3Virtual(
+            @RequestBody List<WeatherRequestDTO> requests
+    ) {
+        List<ResponseDTO> responses = new ArrayList<>();
+
+        try (ExecutorService virtualExecutor = Executors.newVirtualThreadPerTaskExecutor()) {
+            List<Future<ResponseDTO>> futures = new ArrayList<>();
+
+            for (WeatherRequestDTO req : requests) {
+                Callable<ResponseDTO> task = () -> weatherService.getDetails(
+                        req.getLat(), req.getLon(), req.getAqi(), req.getDays(), req.getAlerts()
+                );
+
+                Callable<ResponseDTO> securedTask = new DelegatingSecurityContextCallable<>(task);
+                futures.add(virtualExecutor.submit(securedTask));
+            }
+
+            for (Future<ResponseDTO> future : futures) {
+                responses.add(future.get());
+            }
+
+            return new ResponseEntity<>(responses, HttpStatus.OK);
+
+        } catch (Exception e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
+        }
     }
 }
