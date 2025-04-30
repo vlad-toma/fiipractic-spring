@@ -15,9 +15,7 @@ docker build -t weatherapp . <br>
 cd ../sql <br>
 docker build -t mysql . <br>
 cd .. <br>
-docker-compose up (cu -d ca sa nu apara logurile)(componenta de mysql o sa dea crash la prima rulare din cauza ca trebuie sa isi creeze volumul) <br>
-docker-compose down <br>
-docker-compose up (cu -d ca sa nu apara logurile)<br>
+docker-compose up (cu -d ca sa nu apara logurile)(componenta de mysql este posibil dea crash la prima rulare din cauza ca trebuie sa isi creeze volumul, depinde pe ce rulati) <br>
 
 <br><br>
 Minor bug la interfata: nu se afiseaza logo-ul. In urma buildului de le angular, fisierul logo.png este generat in /dist/weatherapp-fe/browser, 
