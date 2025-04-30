@@ -3,6 +3,7 @@ WORKDIR /fiipractic
 COPY .mvn/ .mvn
 COPY mvnw pom.xml ./
 COPY ./src ./src
+RUN chmod +x ./mvnw
 RUN ./mvnw clean install -DskipTests
 
 FROM bellsoft/liberica-openjre-alpine:21 AS runner
