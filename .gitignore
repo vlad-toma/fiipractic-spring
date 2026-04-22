@@ -1,2 +1,3 @@
 /weatherapp/node_modules
 .env
+/sql/.env
