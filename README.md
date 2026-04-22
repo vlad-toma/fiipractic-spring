@@ -12,8 +12,6 @@ cd /fiipractic <br>
 docker build -t fiipractic . <br>
 cd ../weatherapp <br>
 docker build -t weatherapp . <br>
-cd ../sql <br>
-docker build -t mysql . <br>
 cd .. <br>
 docker-compose up<br>
 
