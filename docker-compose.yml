@@ -1,40 +1,50 @@
 services:
   mysql:
-    image: mysql:latest  
+    image: mysql:latest
+    container_name: mysql
     environment:
       MYSQL_ROOT_PASSWORD: password
       MYSQL_DATABASE: fiipractic
       MYSQL_USER: user
       MYSQL_PASSWORD: pass
     ports:
-      - "3307:3306" 
+      - "3307:3306"
     volumes:
-      - fiipractic-sql:/var/lib/mysql 
+      - fiipractic-sql:/var/lib/mysql
       - ./sql/init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-ppassword"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
 
   fiipractic-api:
-    image: fiipractic:latest 
     build:
-      context: ./fiipractic  
+      context: ./fiipractic
+    image: fiipractic:latest
+    container_name: fiipractic-api
     environment:
-      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/fiipractic
-      - SPRING_DATASOURCE_USERNAME=root
-      - SPRING_DATASOURCE_PASSWORD=password
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/fiipractic
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: password
     depends_on:
-      - mysql 
+      mysql:
+        condition: service_healthy
     ports:
-      - "8081:8081" 
+      - "8081:8081"
+    restart: on-failure
 
   weatherapp-fe:
-    image: weatherapp:latest 
     build:
-      context: ./weatherapp  
+      context: ./weatherapp
+    image: weatherapp:latest
+    container_name: weatherapp-fe
     ports:
-      - "8080:80"  
+      - "8080:80"
     depends_on:
-      - fiipractic-api  
+      - fiipractic-api
     restart: always
 
 volumes:
   fiipractic-sql:
-  
